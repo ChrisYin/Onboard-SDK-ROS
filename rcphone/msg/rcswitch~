@@ -1,0 +1,6 @@
+bool takeoff
+bool landing
+bool z_up
+bool z_down
+bool z_hold
+bool xy_hold
