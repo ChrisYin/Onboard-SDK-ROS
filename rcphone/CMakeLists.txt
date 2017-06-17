@@ -20,6 +20,7 @@ catkin_package(CATKIN_DEPENDS message_runtime std_msgs)
 
 include_directories(${catkin_INCLUDE_DIRS})
 add_executable(listener listener.cpp)
+add_dependencies(listener rcphone_generate_messages_cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 install(TARGETS listener
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
