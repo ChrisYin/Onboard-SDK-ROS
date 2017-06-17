@@ -1,6 +1,0 @@
-bool takeoff
-bool landing
-bool z_hold
-bool xy_hold
-bool z_up
-bool z_down
