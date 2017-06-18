@@ -52,7 +52,7 @@ void StartCollisionAvoidanceCallback(DJIDrone *drone);
 void StopCollisionAvoidanceCallback(DJIDrone *drone);
 
 //! Control msg Callback
-void StateCallback(rcphone::swichdata msg);
+void StateCallback(rcphone::switchdata msg);
 void AttitudeCallback(rcphone::rpydata msg);
 void VerticalCallback(rcphone::zdata msg);
 
@@ -164,7 +164,7 @@ int main(int argc, char *argv[])
     drone->setStopCollisionAvoidanceCallback(StopCollisionAvoidanceCallback, &userData);
 
 	//Set subscriber
-	ros::Subsrciber sub=nh.subscribe("rcphone/switchdata",5,StateCallback);
+	ros::Subscriber sub=nh.subscribe("rcphone/switchdata",5,StateCallback);
 	ros::Subscriber sub1=nh.subscribe("rcphone/rpydata",50,AttitudeCallback);
 	ros::Subscriber sub2=nh.subscribe("rcphone/zdata",5,VerticalCallback);
 	
@@ -198,29 +198,34 @@ int main(int argc, char *argv[])
 						//take off
 						drone->takeoff();
 						m100_state=1;
+						operate_code=-1;
 						break;
 
 				case 2:
 						//landing
 						drone->landing();
 						m100_state=0;
+						operate_code=-1;
 						break;
 				case 3:
 						//vertical control
 						for(int i=0;i<20;i++)
 						{
-							drone->attitude_control(0x40,0,0,0,0);//float x float y float z float yaw
-							usleep(20000);
+							drone->attitude_control(0x40,0,0,z_velocity,0);//float x float y float z float yaw
+							usleep(20000);//50hz
 						}
+						z_velocity=0.0;
+						operate_code=5;
 						break;
 
 				case 4:
 						//rpy control
 						for(int i=0;i<20;i++)
 						{
-							drone->attitude_control(0x40,0,0,0,0);
+							drone->attitude_control(0x02,roll_angle,pitch_angle,0,yaw_angle);
 							usleep(20000);
 						}
+						m100_state=2;
 						break;
 				case 5:
 						//stable mode
@@ -229,11 +234,11 @@ int main(int argc, char *argv[])
 							drone->attitude_control(0x40,0,0,0,0);
 							usleep(20000);
 						}
+						m100_state=1;
+						operate_code=-1;
 						break;
 				default:
 						break;
-
-
 		}
         //main_operate_code = -1;
         //Display_Main_Menu();
@@ -246,23 +251,37 @@ int main(int argc, char *argv[])
 		switch (msg.cmd)
 		{
 				case 0x01:
-						//
+						//m100_state=0:On the ground
+						//m100_state=1:free x y z
+						//m100_state=2:rpy control by phone
 						if(m100_state=0)
 						{
-							operate_code=1;
+								operate_code=1;
 						}
 						break;
 				case 0x02:
-						if(m100_state!=0)
+						if(m100_state=1)
 						{
-							operate_code=2;
+								operate_code=2;
 						}
 						break;
 				case 0x03:
-						operate_code=3;
+						if(m100_state=1)
+						{
+								operate_code=3;
+						}
 						break;
 				case 0x04:
-						operate_code=4;
+						if(m100_state=1)
+						{
+								operate_code=4;
+						}
+						break;
+				case 0x05:
+						if(m100_state=2)
+						{
+								operate_code=5;
+						}
 						break;
 				default:
 						operate_code=-1;
@@ -272,21 +291,48 @@ int main(int argc, char *argv[])
 void AttitudeCallback(rcphone::rpydata msg)
 {
 
-		if(msg.roll<-25)
-				roll_angle=-25;
-		if(msg.roll>25)
-				roll_angle=25;
-		if(msg.pitch<-25)
-				pitch_angle=-25;
-		if(msg.pitch>25)
-				pitch_angle=25;
-		if(msg.yaw<-10)
-				yaw_angle=-10;
-		if(msg.roll>25)
-				roll_angle=25;
-		if(abs(msg.roll)<=25 && abs(msg.pitch)<=25 && abs(msg.yaw)<=25)
+		float rt=0.0;
+		float pt=0.0;
+		float yt=0.0;
+		rt=msg.roll;
+		pt=msg.pitch;
+		yt=msg.yaw;
+		if(rt<-25)
+				rt=-25;
+		if(rt>25)
+				rt=25;
+		if(pt<-25)
+				pt=-25;
+		if(pt>25)
+				pt=25;
+		if(yt<-10)
+				yt=-10;
+		if(yt>10)
+				yt=10;
+		roll_angle=rt;
+		pitch_angle=pt;
+		yaw_angle=yt;
+		
 }
-void VerticalCallback(rcphone::zdata msg);
+void VerticalCallback(rcphone::zdata msg)
+{
+		if(msg.z_cmd>0)
+		{
+				z_velocity=0.5;
+		}
+		else
+		{
+				if(msg.z_cmd<0)
+				{
+						z_velocity=-0.5;
+				}
+				else
+				{
+						z_velocity=0.0;
+				}
+
+		}
+}
 
 //! Callback functions for Mobile Commands
     void ObtainControlMobileCallback(DJIDrone *drone)
