@@ -45,10 +45,8 @@ void rcdataCallback(const rcphone::rpydata msg)
 // %Tag(CALLBACK)%
 void switchdataCallback(const rcphone::switchdata msg)
 {
-  ROS_INFO("takeoff:%d]", msg.takeoff);
-  ROS_INFO("landing:%d]", msg.landing);
-  ROS_INFO("z_hold:%d]", msg.z_hold);
-  ROS_INFO("xy_hold:%d]", msg.xy_hold);	
+  ROS_INFO("takeoff:%d]", msg.cmd);
+
 }
 // %EndTag(CALLBACK)%
 // %Tag(CALLBACK)%
