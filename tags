@@ -3,7 +3,40 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+0	dji_sdk_doc/doxygen/html/search/searchdata.js	/^{$/;"	p	class:indexSectionLabels
+0	dji_sdk_doc/doxygen/html/search/searchdata.js	/^{$/;"	p	class:indexSectionNames
+0	dji_sdk_doc/doxygen/html/search/searchdata.js	/^{$/;"	p	class:indexSectionsWithContent
+1	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  0: "All",$/;"	p	class:indexSectionLabels
+1	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  0: "abcdefghilmnpqrstuvwy",$/;"	p	class:indexSectionsWithContent
+1	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  0: "all",$/;"	p	class:indexSectionNames
+10	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  9: "Macros",$/;"	p	class:indexSectionLabels
+10	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  9: "amnu",$/;"	p	class:indexSectionsWithContent
+10	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  9: "defines",$/;"	p	class:indexSectionNames
+2	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  1: "Classes",$/;"	p	class:indexSectionLabels
+2	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  1: "abcefghmpqrstvwy",$/;"	p	class:indexSectionsWithContent
+2	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  1: "classes",$/;"	p	class:indexSectionNames
+3	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  2: "Namespaces",$/;"	p	class:indexSectionLabels
+3	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  2: "d",$/;"	p	class:indexSectionsWithContent
+3	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  2: "namespaces",$/;"	p	class:indexSectionNames
+4	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  3: "Files",$/;"	p	class:indexSectionLabels
+4	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  3: "d",$/;"	p	class:indexSectionsWithContent
+4	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  3: "files",$/;"	p	class:indexSectionNames
+5	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  4: "Functions",$/;"	p	class:indexSectionLabels
+5	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  4: "abcdfginprstu",$/;"	p	class:indexSectionsWithContent
+5	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  4: "functions",$/;"	p	class:indexSectionNames
+6	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  5: "Variables",$/;"	p	class:indexSectionLabels
+6	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  5: "abcdhlmrtvw",$/;"	p	class:indexSectionsWithContent
+6	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  5: "variables",$/;"	p	class:indexSectionNames
+7	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  6: "Typedefs",$/;"	p	class:indexSectionLabels
+7	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  6: "abcefgmprsv",$/;"	p	class:indexSectionsWithContent
+7	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  6: "typedefs",$/;"	p	class:indexSectionNames
+8	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  7: "Enumerations",$/;"	p	class:indexSectionLabels
+8	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  7: "acmsy",$/;"	p	class:indexSectionsWithContent
+8	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  7: "enums",$/;"	p	class:indexSectionNames
+9	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  8: "Enumerator",$/;"	p	class:indexSectionLabels
+9	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  8: "enumvalues",$/;"	p	class:indexSectionNames
+9	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  8: "ms",$/;"	p	class:indexSectionsWithContent
 A3_GPS	dji_sdk/include/dji_sdk/dji_sdk_node.h	/^	dji_sdk::A3GPS A3_GPS;$/;"	m	class:DJISDKNode
 A3_GPS_info_publisher	dji_sdk/include/dji_sdk/dji_sdk_node.h	/^    ros::Publisher A3_GPS_info_publisher;$/;"	m	class:DJISDKNode
 A3_HAS_BATTERY	dji_sdk/include/dji_sdk/DJI_LIB_ROS_Adapter.h	36;"	d
@@ -68,12 +101,14 @@ AUTOPILOT_ACTIVATED	dji_sdk_lib/include/dji_sdk_lib/DJI_Logging.h	/^  AUTOPILOT_
 AUTOPILOT_NOT_ACTIVATED	dji_sdk_lib/include/dji_sdk_lib/DJI_Logging.h	/^  AUTOPILOT_NOT_ACTIVATED = 0xFF01$/;"	e	enum:DJI::onboardSDK::__ActivationGetProtocolVersionAckCodes
 Ack	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct Ack$/;"	s	namespace:DJI::onboardSDK
 Ack	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} Ack;$/;"	t	namespace:DJI::onboardSDK	typeref:struct:DJI::onboardSDK::Ack
+Activate	dji_sdk_doc/doxygen/html/search/search.js	/^  this.Activate = function(isActive)$/;"	m	class:SearchBox
 ActivateData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct ActivateData$/;"	s	namespace:DJI::onboardSDK
 ActivateData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} ActivateData;$/;"	t	namespace:DJI::onboardSDK	typeref:struct:DJI::onboardSDK::ActivateData
 Angle	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^typedef double Angle;$/;"	t	namespace:DJI
 AngularSim	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  EulerAngle AngularSim;$/;"	m	class:DJI::onboardSDK::Flight
 ArmMobileCallback	dji_sdk_demo/src/client.cpp	/^    void ArmMobileCallback(DJIDrone *drone)$/;"	f
 ArmMobileCallback	dji_sdk_demo/src/rctest1.cpp	/^    void ArmMobileCallback(DJIDrone *drone)$/;"	f
+AttitudeCallback	dji_sdk_demo/src/rctest1.cpp	/^void AttitudeCallback(rcphone::rpydata msg)$/;"	f
 AttitudeControlDemoMobileCallback	dji_sdk_demo/src/client.cpp	/^    void AttitudeControlDemoMobileCallback(DJIDrone *drone)$/;"	f
 AttitudeControlDemoMobileCallback	dji_sdk_demo/src/rctest1.cpp	/^    void AttitudeControlDemoMobileCallback(DJIDrone *drone)$/;"	f
 BACK_TO_TABLES	dji_sdk_lib/src/DJI_Codec.cpp	48;"	d	file:
@@ -165,6 +200,8 @@ Channel_12	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t Channel_12;$/
 Channel_13	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t Channel_13;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
 Channel_14	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t Channel_14;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
 Channel_15	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t Channel_15;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
+CloseResultsWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.CloseResultsWindow = function()$/;"	m	class:SearchBox
+CloseSelectionWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.CloseSelectionWindow = function()$/;"	m	class:SearchBox
 Command	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct Command$/;"	s	namespace:DJI::onboardSDK
 Command	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} Command;$/;"	t	namespace:DJI::onboardSDK	typeref:struct:DJI::onboardSDK::Command
 CommonData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct CommonData$/;"	s	namespace:DJI::onboardSDK
@@ -204,7 +241,6 @@ DJICOMMONTYPE	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	20;"	d
 DJIDrone	dji_sdk/include/dji_sdk/dji_drone.h	/^	DJIDrone(ros::NodeHandle& nh):$/;"	f	class:DJIDrone
 DJIDrone	dji_sdk/include/dji_sdk/dji_drone.h	/^class DJIDrone$/;"	c
 DJIDrone	dji_sdk/src/dji_sdk/dji_drone.py	/^class DJIDrone:$/;"	c
-DJIDrone	dji_sdk_demo/script/client.py	/^from dji_sdk.dji_drone import DJIDrone$/;"	i
 DJISDKMission	dji_sdk/include/dji_sdk/dji_sdk_mission.h	/^class DJISDKMission$/;"	c
 DJISDKMission	dji_sdk/src/modules/dji_sdk_node_mission.cpp	/^DJISDKMission::DJISDKMission(ros::NodeHandle& nh)$/;"	f	class:DJISDKMission
 DJISDKNode	dji_sdk/include/dji_sdk/dji_sdk_node.h	/^class DJISDKNode$/;"	c
@@ -225,6 +261,13 @@ DJI_TYPE	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	20;"	d
 DJI_VERSION_H	dji_sdk_lib/include/dji_sdk_lib/DJI_Version.h	20;"	d
 DJI_VIRTUALRC_H	dji_sdk_lib/include/dji_sdk_lib/DJI_VirtualRC.h	14;"	d
 DJI_WAYPOINT_H	dji_sdk_lib/include/dji_sdk_lib/DJI_WayPoint.h	17;"	d
+DOMPopupSearchResults	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMPopupSearchResults = function()$/;"	m	class:SearchBox
+DOMPopupSearchResultsWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMPopupSearchResultsWindow = function()$/;"	m	class:SearchBox
+DOMSearchBox	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchBox = function()$/;"	m	class:SearchBox
+DOMSearchClose	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchClose = function()$/;"	m	class:SearchBox
+DOMSearchField	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchField = function()$/;"	m	class:SearchBox
+DOMSearchSelect	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchSelect = function()$/;"	m	class:SearchBox
+DOMSearchSelectWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchSelectWindow = function()$/;"	m	class:SearchBox
 Device	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  enum Device$/;"	g	class:DJI::onboardSDK::Flight
 DisarmMobileCallback	dji_sdk_demo/src/client.cpp	/^    void DisarmMobileCallback(DJIDrone *drone)$/;"	f
 DisarmMobileCallback	dji_sdk_demo/src/rctest1.cpp	/^    void DisarmMobileCallback(DJIDrone *drone)$/;"	f
@@ -249,6 +292,7 @@ EulerianAngle	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^} EulerianAngle;
 F	dji_sdk_lib/src/DJI_Codec.cpp	45;"	d	file:
 FD	dji_sdk_lib/src/DJI_Codec.cpp	46;"	d	file:
 FOLLOW_CODE	dji_sdk_lib/include/dji_sdk_lib/DJI_API.h	/^enum FOLLOW_CODE$/;"	g	namespace:DJI::onboardSDK
+FindChildElement	dji_sdk_doc/doxygen/html/search/search.js	/^    this.FindChildElement = function(id)$/;"	m	class:SearchResults
 Flag	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^typedef uint32_t Flag;$/;"	t	namespace:DJI
 Flight	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^class Flight$/;"	c	namespace:DJI::onboardSDK
 Flight	dji_sdk_lib/src/DJI_Flight.cpp	/^Flight::Flight(DJI::onboardSDK::CoreAPI *ControlAPI)$/;"	f	class:Flight
@@ -391,13 +435,24 @@ MissionACKUnion	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} MissionACKUnion; 
 MissionType	dji_sdk/include/dji_sdk/dji_sdk_mission.h	/^enum class MissionType $/;"	c
 Mode	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  enum Mode$/;"	g	class:DJI::onboardSDK::Flight
 NAME	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	28;"	d
+Nav	dji_sdk_doc/doxygen/html/search/search.js	/^    this.Nav = function(evt,itemIndex)$/;"	m	class:SearchResults
+NavChild	dji_sdk_doc/doxygen/html/search/search.js	/^    this.NavChild = function(evt,itemIndex,childIndex)$/;"	m	class:SearchResults
+NavNext	dji_sdk_doc/doxygen/html/search/search.js	/^    this.NavNext = function(index)$/;"	m	class:SearchResults
+NavPrev	dji_sdk_doc/doxygen/html/search/search.js	/^    this.NavPrev = function(index)$/;"	m	class:SearchResults
 ONBOARDSDK_DJI_LOGGING_H	dji_sdk_lib/include/dji_sdk_lib/DJI_Logging.h	13;"	d
 ObtainControlMobileCallback	dji_sdk_demo/src/client.cpp	/^    void ObtainControlMobileCallback(DJIDrone *drone)$/;"	f
 ObtainControlMobileCallback	dji_sdk_demo/src/rctest1.cpp	/^    void ObtainControlMobileCallback(DJIDrone *drone)$/;"	f
+OnSearchFieldChange	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchFieldChange = function(evt)$/;"	m	class:SearchBox
+OnSearchFieldFocus	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchFieldFocus = function(isActive)$/;"	m	class:SearchBox
+OnSearchSelectHide	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchSelectHide = function()$/;"	m	class:SearchBox
+OnSearchSelectKey	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchSelectKey = function(evt)$/;"	m	class:SearchBox
+OnSearchSelectShow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchSelectShow = function()$/;"	m	class:SearchBox
+OnSelectItem	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSelectItem = function(id)$/;"	m	class:SearchBox
 POLL_TICK	dji_sdk_lib/include/dji_sdk_lib/DJI_Link.h	23;"	d
 PRO_PURE_DATA_MAX_SIZE	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	661;"	d
 PositionData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct PositionData$/;"	s	namespace:DJI::onboardSDK
 PositionData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} PositionData;$/;"	t	namespace:DJI::onboardSDK	typeref:struct:DJI::onboardSDK::PositionData
+ProcessKeys	dji_sdk_doc/doxygen/html/search/search.js	/^    this.ProcessKeys = function(e)$/;"	m	class:SearchResults
 QuaternionData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct QuaternionData$/;"	s	namespace:DJI::onboardSDK
 QuaternionData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} QuaternionData;$/;"	t	namespace:DJI::onboardSDK	typeref:struct:DJI::onboardSDK::QuaternionData
 RCData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct RCData$/;"	s	namespace:DJI::onboardSDK
@@ -447,35 +502,12 @@ STATUS_SKY_STANDBY	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^    STATUS_SKY
 STATUS_SKY_STANDBY_M100ONLY	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^    STATUS_SKY_STANDBY_M100ONLY = 3,$/;"	e	enum:DJI::onboardSDK::Flight::Status
 STATUS_TAKE_OFF_M100ONLY	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^    STATUS_TAKE_OFF_M100ONLY = 2,$/;"	e	enum:DJI::onboardSDK::Flight::Status
 SYNC_CODE	dji_sdk_lib/include/dji_sdk_lib/DJI_API.h	/^enum SYNC_CODE$/;"	g	namespace:DJI::onboardSDK
+Search	dji_sdk_doc/doxygen/html/search/search.js	/^    this.Search = function(search)$/;"	m	class:SearchResults
+Search	dji_sdk_doc/doxygen/html/search/search.js	/^  this.Search = function()$/;"	m	class:SearchBox
 SearchBox	dji_sdk_doc/doxygen/html/search/search.js	/^function SearchBox(name, resultsPath, inFrame, label)$/;"	c
-SearchBox.Activate	dji_sdk_doc/doxygen/html/search/search.js	/^  this.Activate = function(isActive)$/;"	m
-SearchBox.CloseResultsWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.CloseResultsWindow = function()$/;"	m
-SearchBox.CloseSelectionWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.CloseSelectionWindow = function()$/;"	m
-SearchBox.DOMPopupSearchResults	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMPopupSearchResults = function()$/;"	m
-SearchBox.DOMPopupSearchResultsWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMPopupSearchResultsWindow = function()$/;"	m
-SearchBox.DOMSearchBox	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchBox = function()$/;"	m
-SearchBox.DOMSearchClose	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchClose = function()$/;"	m
-SearchBox.DOMSearchField	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchField = function()$/;"	m
-SearchBox.DOMSearchSelect	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchSelect = function()$/;"	m
-SearchBox.DOMSearchSelectWindow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.DOMSearchSelectWindow = function()$/;"	m
-SearchBox.OnSearchFieldChange	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchFieldChange = function(evt)$/;"	m
-SearchBox.OnSearchFieldFocus	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchFieldFocus = function(isActive)$/;"	m
-SearchBox.OnSearchSelectHide	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchSelectHide = function()$/;"	m
-SearchBox.OnSearchSelectKey	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchSelectKey = function(evt)$/;"	m
-SearchBox.OnSearchSelectShow	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSearchSelectShow = function()$/;"	m
-SearchBox.OnSelectItem	dji_sdk_doc/doxygen/html/search/search.js	/^  this.OnSelectItem = function(id)$/;"	m
-SearchBox.Search	dji_sdk_doc/doxygen/html/search/search.js	/^  this.Search = function()$/;"	m
-SearchBox.SelectItemCount	dji_sdk_doc/doxygen/html/search/search.js	/^  this.SelectItemCount = function(id)$/;"	m
-SearchBox.SelectItemSet	dji_sdk_doc/doxygen/html/search/search.js	/^  this.SelectItemSet = function(id)$/;"	m
 SearchResults	dji_sdk_doc/doxygen/html/search/search.js	/^function SearchResults(name)$/;"	c
-SearchResults.FindChildElement	dji_sdk_doc/doxygen/html/search/search.js	/^    this.FindChildElement = function(id)$/;"	m
-SearchResults.Nav	dji_sdk_doc/doxygen/html/search/search.js	/^    this.Nav = function(evt,itemIndex)$/;"	m
-SearchResults.NavChild	dji_sdk_doc/doxygen/html/search/search.js	/^    this.NavChild = function(evt,itemIndex,childIndex)$/;"	m
-SearchResults.NavNext	dji_sdk_doc/doxygen/html/search/search.js	/^    this.NavNext = function(index)$/;"	m
-SearchResults.NavPrev	dji_sdk_doc/doxygen/html/search/search.js	/^    this.NavPrev = function(index)$/;"	m
-SearchResults.ProcessKeys	dji_sdk_doc/doxygen/html/search/search.js	/^    this.ProcessKeys = function(e)$/;"	m
-SearchResults.Search	dji_sdk_doc/doxygen/html/search/search.js	/^    this.Search = function(search)$/;"	m
-SearchResults.Toggle	dji_sdk_doc/doxygen/html/search/search.js	/^    this.Toggle = function(id)$/;"	m
+SelectItemCount	dji_sdk_doc/doxygen/html/search/search.js	/^  this.SelectItemCount = function(id)$/;"	m	class:SearchBox
+SelectItemSet	dji_sdk_doc/doxygen/html/search/search.js	/^  this.SelectItemSet = function(id)$/;"	m	class:SearchBox
 SetUp	dji_sdk/src/test/dji_sdk_test.cpp	/^void dji_sdk_node::SetUp() {$/;"	f	class:dji_sdk_node
 SimpleACK	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef uint16_t SimpleACK;$/;"	t	namespace:DJI::onboardSDK
 SmoothMode	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  enum SmoothMode$/;"	g	class:DJI::onboardSDK::Flight
@@ -487,6 +519,7 @@ StartMapLASLoggingMobileCallback	dji_sdk_demo/src/client.cpp	/^void StartMapLASL
 StartMapLASLoggingMobileCallback	dji_sdk_demo/src/rctest1.cpp	/^void StartMapLASLoggingMobileCallback(DJIDrone *drone)$/;"	f
 StartVideoMobileCallback	dji_sdk_demo/src/client.cpp	/^    void StartVideoMobileCallback(DJIDrone *drone)$/;"	f
 StartVideoMobileCallback	dji_sdk_demo/src/rctest1.cpp	/^    void StartVideoMobileCallback(DJIDrone *drone)$/;"	f
+StateCallback	dji_sdk_demo/src/rctest1.cpp	/^	void StateCallback(rcphone::switchdata msg)$/;"	f
 Status	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  enum Status$/;"	g	class:DJI::onboardSDK::Flight
 StopCollisionAvoidanceCallback	dji_sdk_demo/src/client.cpp	/^void StopCollisionAvoidanceCallback(DJIDrone *drone)$/;"	f
 StopCollisionAvoidanceCallback	dji_sdk_demo/src/rctest1.cpp	/^void StopCollisionAvoidanceCallback(DJIDrone *drone)$/;"	f
@@ -513,6 +546,7 @@ TaskData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} TaskData;$/;"	t	namespac
 TearDown	dji_sdk/src/test/dji_sdk_test.cpp	/^void dji_sdk_node::TearDown() {$/;"	f	class:dji_sdk_node
 TimeStampData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct TimeStampData$/;"	s	namespace:DJI::onboardSDK
 TimeStampData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} TimeStampData;$/;"	t	namespace:DJI::onboardSDK	typeref:struct:DJI::onboardSDK::TimeStampData
+Toggle	dji_sdk_doc/doxygen/html/search/search.js	/^    this.Toggle = function(id)$/;"	m	class:SearchResults
 UserData	dji_sdk/include/dji_sdk/dji_drone.h	/^typedef void *UserData; $/;"	t	class:DJIDrone
 UserData	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^typedef void *UserData; $/;"	t	namespace:DJI
 VERTICAL_POSITION	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^    VERTICAL_POSITION = 0x10,$/;"	e	enum:DJI::onboardSDK::Flight::VerticalLogic
@@ -537,6 +571,7 @@ VelocityData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} VelocityData;$/;"	t	
 Version	dji_sdk_lib/include/dji_sdk_lib/DJI_Version.h	/^typedef uint32_t Version;$/;"	t	namespace:DJI::onboardSDK
 VersionData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^typedef struct VersionData$/;"	s	namespace:DJI::onboardSDK
 VersionData	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^} VersionData;$/;"	t	namespace:DJI::onboardSDK	typeref:struct:DJI::onboardSDK::VersionData
+VerticalCallback	dji_sdk_demo/src/rctest1.cpp	/^void VerticalCallback(rcphone::zdata msg)$/;"	f
 VerticalLogic	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  enum VerticalLogic$/;"	g	class:DJI::onboardSDK::Flight
 View	dji_sdk_lib/include/dji_sdk_lib/DJI_HotPoint.h	/^  enum View$/;"	g	class:DJI::onboardSDK::HotPoint
 VirtuaRCTestMobileCallback	dji_sdk_demo/src/client.cpp	/^    void VirtuaRCTestMobileCallback(DJIDrone *drone)$/;"	f
@@ -642,7 +677,6 @@ ack_recv_cv	dji_sdk/include/dji_sdk/DJI_HardDriver_Manifold.h	/^        pthread_
 actionNumber	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t actionNumber : 4;$/;"	m	struct:DJI::onboardSDK::WayPointData
 actionRepeat	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t actionRepeat : 4;$/;"	m	struct:DJI::onboardSDK::WayPointData
 actionTimeLimit	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint16_t actionTimeLimit;$/;"	m	struct:DJI::onboardSDK::WayPointData
-actionlib	dji_sdk/src/dji_sdk/dji_drone.py	/^import actionlib$/;"	i
 activate	dji_sdk/include/dji_sdk/DJI_LIB_ROS_Adapter.h	/^        void activate(ActivateData *data, CallBack callback) {$/;"	f	class:DJI::onboardSDK::ROSAdapter
 activate	dji_sdk/include/dji_sdk/dji_drone.h	/^	bool activate()$/;"	f	class:DJIDrone
 activate	dji_sdk_lib/src/DJI_API.cpp	/^CoreAPI::activate(ActivateData* data, CallBack callback, UserData userData)$/;"	f	class:CoreAPI
@@ -854,9 +888,6 @@ disarm_drone	dji_sdk/src/dji_sdk/dji_drone.py	/^    def disarm_drone(self):$/;"	
 displayLog	dji_sdk_lib/src/DJI_HardDriver.cpp	/^void HardDriver::displayLog(const char *buf)$/;"	f	class:HardDriver
 display_main_menu	dji_sdk_demo/script/client.py	/^def display_main_menu():$/;"	f
 djiSDKNode	dji_sdk/src/test/dji_sdk_test.h	/^DJISDKNode *djiSDKNode;$/;"	v
-dji_sdk	dji_sdk/src/dji_sdk/dji_drone.py	/^import dji_sdk.msg$/;"	i
-dji_sdk	dji_sdk/src/dji_sdk/dji_drone.py	/^import dji_sdk.srv$/;"	i
-dji_sdk	dji_sdk_demo/script/client.py	/^import dji_sdk.msg$/;"	i
 dji_sdk_mission	dji_sdk/include/dji_sdk/dji_sdk_node.h	/^    DJISDKMission* dji_sdk_mission;$/;"	m	class:DJISDKNode
 dji_sdk_node	dji_sdk/src/test/dji_sdk_test.h	/^class dji_sdk_node : public testing::Test {$/;"	c
 drawCirMobileCMD	dji_sdk_lib/include/dji_sdk_lib/DJI_API.h	/^  bool drawCirMobileCMD;$/;"	m	class:DJI::onboardSDK::CoreAPI
@@ -939,7 +970,6 @@ fwVersion	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  DJI::onboardSDK::Versio
 gear	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t gear;$/;"	m	struct:DJI::onboardSDK::RCData
 gear	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t gear;$/;"	m	struct:DJI::onboardSDK::RadioData
 gear	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t gear;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
-generate_distutils_setup	dji_sdk/setup.py	/^from catkin_pkg.python_setup import generate_distutils_setup$/;"	i
 getACKFrameStatus	dji_sdk_lib/src/DJI_Link.cpp	/^DJI::onboardSDK::CoreAPI::getACKFrameStatus()$/;"	f	class:DJI::onboardSDK::CoreAPI
 getAcceleration	dji_sdk_lib/src/DJI_Flight.cpp	/^CommonData Flight::getAcceleration() const { return api->getBroadcastData().a; }$/;"	f	class:Flight
 getAccountData	dji_sdk_lib/src/DJI_API.cpp	/^CoreAPI::getAccountData() const$/;"	f	class:CoreAPI
@@ -1119,39 +1149,6 @@ index	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t index;$/;"	m	struct
 index	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t index;$/;"	m	struct:DJI::onboardSDK::WayPointDataACK
 index	dji_sdk_lib/include/dji_sdk_lib/DJI_WayPoint.h	/^  WayPointData *index;$/;"	m	class:DJI::onboardSDK::WayPoint
 indexNumber	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t indexNumber;$/;"	m	struct:DJI::onboardSDK::WayPointInitData
-indexSectionLabels.0	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  0: "All",$/;"	p
-indexSectionLabels.1	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  1: "Classes",$/;"	p
-indexSectionLabels.10	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  10: "Pages"$/;"	p
-indexSectionLabels.2	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  2: "Namespaces",$/;"	p
-indexSectionLabels.3	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  3: "Files",$/;"	p
-indexSectionLabels.4	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  4: "Functions",$/;"	p
-indexSectionLabels.5	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  5: "Variables",$/;"	p
-indexSectionLabels.6	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  6: "Typedefs",$/;"	p
-indexSectionLabels.7	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  7: "Enumerations",$/;"	p
-indexSectionLabels.8	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  8: "Enumerator",$/;"	p
-indexSectionLabels.9	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  9: "Macros",$/;"	p
-indexSectionNames.0	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  0: "all",$/;"	p
-indexSectionNames.1	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  1: "classes",$/;"	p
-indexSectionNames.10	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  10: "pages"$/;"	p
-indexSectionNames.2	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  2: "namespaces",$/;"	p
-indexSectionNames.3	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  3: "files",$/;"	p
-indexSectionNames.4	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  4: "functions",$/;"	p
-indexSectionNames.5	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  5: "variables",$/;"	p
-indexSectionNames.6	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  6: "typedefs",$/;"	p
-indexSectionNames.7	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  7: "enums",$/;"	p
-indexSectionNames.8	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  8: "enumvalues",$/;"	p
-indexSectionNames.9	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  9: "defines",$/;"	p
-indexSectionsWithContent.0	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  0: "abcdefghilmnpqrstuvwy",$/;"	p
-indexSectionsWithContent.1	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  1: "abcefghmpqrstvwy",$/;"	p
-indexSectionsWithContent.10	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  10: "dt"$/;"	p
-indexSectionsWithContent.2	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  2: "d",$/;"	p
-indexSectionsWithContent.3	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  3: "d",$/;"	p
-indexSectionsWithContent.4	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  4: "abcdfginprstu",$/;"	p
-indexSectionsWithContent.5	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  5: "abcdhlmrtvw",$/;"	p
-indexSectionsWithContent.6	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  6: "abcefgmprsv",$/;"	p
-indexSectionsWithContent.7	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  7: "acmsy",$/;"	p
-indexSectionsWithContent.8	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  8: "ms",$/;"	p
-indexSectionsWithContent.9	dji_sdk_doc/doxygen/html/search/searchdata.js	/^  9: "amnu",$/;"	p
 info	dji_sdk_lib/include/dji_sdk_lib/DJI_WayPoint.h	/^  WayPointInitData info;$/;"	m	class:DJI::onboardSDK::WayPoint
 init	dji_sdk/include/dji_sdk/DJI_HardDriver_Manifold.h	/^        void init()$/;"	f	class:DJI::onboardSDK::HardDriver_Manifold
 init	dji_sdk/include/dji_sdk/DJI_LIB_ROS_Adapter.h	/^        void init(std::string device, unsigned int baudrate) {$/;"	f	class:DJI::onboardSDK::ROSAdapter
@@ -1274,6 +1271,7 @@ longitude	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  float64_t longitude;$/;
 longitude	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  float64_t longitude;$/;"	m	struct:DJI::onboardSDK::WayPointData
 longitude	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int32_t longitude;$/;"	m	struct:DJI::onboardSDK::GPSData
 lookat	dji_sdk/src/dji_sdk/dji_drone.py	/^    def lookat(self, x, y, z, duration):$/;"	m	class:DJIDrone
+m100_state	dji_sdk_demo/src/rctest1.cpp	/^int m100_state=0;$/;"	v
 m_ackLock	dji_sdk/include/dji_sdk/DJI_HardDriver_Manifold.h	/^        pthread_mutex_t m_ackLock;$/;"	m	class:DJI::onboardSDK::HardDriver_Manifold
 m_baudrate	dji_sdk/include/dji_sdk/DJI_HardDriver_Manifold.h	/^        unsigned int m_baudrate;$/;"	m	class:DJI::onboardSDK::HardDriver_Manifold
 m_broadcastCallback	dji_sdk/include/dji_sdk/DJI_LIB_ROS_Adapter.h	/^        std::function<void()> m_broadcastCallback;$/;"	m	class:DJI::onboardSDK::ROSAdapter
@@ -1294,8 +1292,6 @@ main	dji_sdk_demo/script/client.py	/^def main():$/;"	f
 main	dji_sdk_demo/src/client.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	dji_sdk_demo/src/rctest1.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	rcphone/listener.cpp	/^int main(int argc, char **argv)$/;"	f
-math	dji_sdk/src/dji_sdk/dji_drone.py	/^import math$/;"	i
-math	dji_sdk_demo/script/client.py	/^import math$/;"	i
 maxIndex	dji_sdk_lib/include/dji_sdk_lib/DJI_WayPoint.h	/^  uint8_t maxIndex;$/;"	m	class:DJI::onboardSDK::WayPoint
 maxRadius	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  float32_t maxRadius;$/;"	m	struct:DJI::onboardSDK::HotPointStartACK
 maxVelocity	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  float32_t maxVelocity;$/;"	m	struct:DJI::onboardSDK::WayPointInitData
@@ -1393,10 +1389,6 @@ mode	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t mode;$/;"	m	struct:D
 mode	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t mode;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
 mode	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t mode;$/;"	m	struct:DJI::onboardSDK::CtrlInfoData
 mode	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t mode;$/;"	m	struct:DJI::onboardSDK::GimbalAngleData
-msg	dji_sdk/src/dji_sdk/dji_drone.py	/^import dji_sdk.msg$/;"	i
-msg	dji_sdk/src/dji_sdk/dji_drone.py	/^import nav_msgs.msg$/;"	i
-msg	dji_sdk/src/dji_sdk/dji_drone.py	/^import std_msgs.msg$/;"	i
-msg	dji_sdk_demo/script/client.py	/^import dji_sdk.msg$/;"	i
 namespaces	dji_sdk_doc/doxygen/html/DJICommonType_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"><\/a>$/;"	a
 namespaces	dji_sdk_doc/doxygen/html/DJI__API_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"><\/a>$/;"	a
 namespaces	dji_sdk_doc/doxygen/html/DJI__Camera_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"><\/a>$/;"	a
@@ -1410,7 +1402,6 @@ namespaces	dji_sdk_doc/doxygen/html/DJI__Version_8h.html	/^<tr class="heading"><
 namespaces	dji_sdk_doc/doxygen/html/DJI__VirtualRC_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"><\/a>$/;"	a
 namespaces	dji_sdk_doc/doxygen/html/DJI__WayPoint_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"><\/a>$/;"	a
 nanoTime	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t nanoTime;$/;"	m	struct:DJI::onboardSDK::TimeStampData
-nav_msgs	dji_sdk/src/dji_sdk/dji_drone.py	/^import nav_msgs.msg$/;"	i
 need_encrypt	dji_sdk_lib/include/dji_sdk_lib/DJI_App.h	/^  unsigned char need_encrypt : 1;$/;"	m	struct:__anon1
 nested-classes	dji_sdk_doc/doxygen/html/DJICommonType_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"><\/a>$/;"	a
 nested-classes	dji_sdk_doc/doxygen/html/DJI__API_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"><\/a>$/;"	a
@@ -1461,6 +1452,7 @@ onboardSDK	dji_sdk_lib/include/dji_sdk_lib/DJI_WayPoint.h	/^namespace onboardSDK
 onboardSDK	dji_sdk_lib/src/DJI_Logging.cpp	/^namespace onboardSDK {$/;"	n	namespace:DJI	file:
 onboardSDK	dji_sdk_lib/src/DJI_Mission.cpp	/^namespace onboardSDK$/;"	n	namespace:DJI	file:
 onceRead	dji_sdk_lib/include/dji_sdk_lib/DJI_API.h	/^  size_t onceRead;$/;"	m	class:DJI::onboardSDK::CoreAPI
+operate_code	dji_sdk_demo/src/rctest1.cpp	/^int operate_code = 0;$/;"	v
 other_mission_push_info	dji_sdk/include/dji_sdk/dji_drone.h	/^	dji_sdk::MissionStatusOther other_mission_push_info;$/;"	m	class:DJIDrone
 package_dir	dji_sdk/setup.py	/^	package_dir={'': 'src'},$/;"	v
 packages	dji_sdk/setup.py	/^	packages=['dji_sdk'],$/;"	v
@@ -1483,6 +1475,7 @@ pitch	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t pitch;$/;"	m	struct
 pitch	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t pitch;$/;"	m	struct:DJI::onboardSDK::RadioData
 pitch	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t pitch;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
 pitchLimit	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t pitchLimit : 1;$/;"	m	struct:DJI::onboardSDK::GimbalData
+pitch_angle	dji_sdk_demo/src/rctest1.cpp	/^float pitch_angle=0.0;$/;"	v
 pmem	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  unsigned char *pmem;$/;"	m	struct:DJI::onboardSDK::MMU_Tab
 pos	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  PositionData pos;$/;"	m	struct:DJI::onboardSDK::BroadcastData
 posFlag	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t posFlag;$/;"	m	struct:DJI::onboardSDK::RTKData
@@ -1647,9 +1640,8 @@ roll	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t roll;$/;"	m	struct:D
 roll	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t roll;$/;"	m	struct:DJI::onboardSDK::RadioData
 roll	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t roll;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
 rollLimit	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t rollLimit : 1;$/;"	m	struct:DJI::onboardSDK::GimbalData
+roll_angle	dji_sdk_demo/src/rctest1.cpp	/^float roll_angle=0.0;$/;"	v
 rosAdapter	dji_sdk/src/dji_sdk_node.cpp	/^DJI::onboardSDK::ROSAdapter *rosAdapter;$/;"	v
-roslib	dji_sdk/src/dji_sdk/dji_drone.py	/^import roslib$/;"	i
-rospy	dji_sdk/src/dji_sdk/dji_drone.py	/^import rospy$/;"	i
 rtk	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  RTKData rtk;$/;"	m	struct:DJI::onboardSDK::BroadcastData
 sbox	dji_sdk_lib/src/DJI_Codec.cpp	/^const unsigned char sbox[256] = {$/;"	v
 sboxinv	dji_sdk_lib/src/DJI_Codec.cpp	/^const unsigned char sboxinv[256] = {$/;"	v
@@ -1915,7 +1907,6 @@ setYawType	dji_sdk_lib/src/DJI_Follow.cpp	/^void Follow::setYawType(const Follow
 set_id	dji_sdk_lib/include/dji_sdk_lib/DJI_Logging.h	/^  uint8_t set_id;$/;"	m	struct:DJI::onboardSDK::__ActivationGetProtocolVersionCommand
 set_id	dji_sdk_lib/include/dji_sdk_lib/DJI_Logging.h	/^  uint8_t set_id;$/;"	m	struct:DJI::onboardSDK::__Command
 set_message_frequency	dji_sdk/include/dji_sdk/dji_drone.h	/^	bool set_message_frequency(uint8_t frequency_data[16])$/;"	f	class:DJIDrone
-setup	dji_sdk/setup.py	/^from distutils.core import setup$/;"	i
 setup	dji_sdk_lib/src/DJI_Link.cpp	/^CoreAPI::setup()$/;"	f	class:CoreAPI
 setupMMU	dji_sdk_lib/src/DJI_Memory.cpp	/^void DJI::onboardSDK::CoreAPI::setupMMU()$/;"	f	class:DJI::onboardSDK::CoreAPI
 setupSession	dji_sdk_lib/src/DJI_Memory.cpp	/^void DJI::onboardSDK::CoreAPI::setupSession()$/;"	f	class:DJI::onboardSDK::CoreAPI
@@ -1926,7 +1917,6 @@ size16_t	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^typedef uint16_t size
 size8_t	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^typedef uint8_t size8_t;$/;"	t	namespace:DJI
 sof	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  unsigned int sof : 8;$/;"	m	struct:DJI::onboardSDK::Header
 speed	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  Vector3dData speed;$/;"	m	class:DJI::onboardSDK::Flight
-srv	dji_sdk/src/dji_sdk/dji_drone.py	/^import dji_sdk.srv$/;"	i
 start	dji_sdk_lib/src/DJI_Follow.cpp	/^MissionACK Follow::start(FollowData *Data, int timeout)$/;"	f	class:Follow
 start	dji_sdk_lib/src/DJI_Follow.cpp	/^void Follow::start(FollowData *Data, CallBack callback, UserData userData)$/;"	f	class:Follow
 start	dji_sdk_lib/src/DJI_HotPoint.cpp	/^HotPointStartACK HotPoint::start(int timeout)$/;"	f	class:HotPoint
@@ -1946,7 +1936,6 @@ start_video	dji_sdk/src/dji_sdk/dji_drone.py	/^    def start_video(self):$/;"	m	
 status	dji_sdk_lib/include/dji_sdk_lib/DJI_Logging.h	/^  __ActivationGetProtocolVersionAckCodes status;$/;"	m	struct:DJI::onboardSDK::__ActivationGetProtocolVersionAck
 status	dji_sdk_lib/include/dji_sdk_lib/DJI_Mission.h	/^  uint8_t status;$/;"	m	struct:DJI::onboardSDK::HotPointACKData
 status	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  FlightStatus status; \/\/! @todo define enum$/;"	m	struct:DJI::onboardSDK::BroadcastData
-std_msgs	dji_sdk/src/dji_sdk/dji_drone.py	/^import std_msgs.msg$/;"	i
 stop	dji_sdk_lib/src/DJI_Follow.cpp	/^MissionACK Follow::stop(int timeout)$/;"	f	class:Follow
 stop	dji_sdk_lib/src/DJI_Follow.cpp	/^void Follow::stop(CallBack callback, UserData userData)$/;"	f	class:Follow
 stop	dji_sdk_lib/src/DJI_HotPoint.cpp	/^MissionACK HotPoint::stop(int timeout)$/;"	f	class:HotPoint
@@ -1973,7 +1962,6 @@ sync_flag_control_callback	dji_sdk/src/modules/dji_sdk_node_services.cpp	/^bool 
 sync_flag_control_service	dji_sdk/include/dji_sdk/dji_drone.h	/^	ros::ServiceClient sync_flag_control_service;$/;"	m	class:DJIDrone
 sync_flag_control_service	dji_sdk/include/dji_sdk/dji_sdk_node.h	/^	ros::ServiceServer sync_flag_control_service;$/;"	m	class:DJISDKNode
 sync_timestamp	dji_sdk/src/dji_sdk/dji_drone.py	/^    def sync_timestamp(self, frequency=0):$/;"	m	class:DJIDrone
-sys	dji_sdk_demo/script/client.py	/^import sys$/;"	i
 tabIndex	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  unsigned int tabIndex : 8;$/;"	m	struct:DJI::onboardSDK::MMU_Tab
 tagAES256Context	dji_sdk_lib/src/DJI_Codec.cpp	/^typedef struct tagAES256Context$/;"	s	file:
 takeOffCallback	dji_sdk/include/dji_sdk/dji_drone.h	/^	CallBackHandler takeOffCallback;$/;"	m	class:DJIDrone
@@ -1994,8 +1982,6 @@ taskData	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  TaskData taskData;$/;"
 throttle	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t throttle;$/;"	m	struct:DJI::onboardSDK::RCData
 throttle	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t throttle;$/;"	m	struct:DJI::onboardSDK::RadioData
 throttle	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t throttle;$/;"	m	struct:DJI::onboardSDK::VirtualRCData
-time	dji_sdk/src/dji_sdk/dji_drone.py	/^import time$/;"	i
-time	dji_sdk_demo/script/client.py	/^import time$/;"	i
 time	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t time;$/;"	m	struct:DJI::onboardSDK::GPSData
 time	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t time;$/;"	m	struct:DJI::onboardSDK::RTKData
 time	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint32_t time;$/;"	m	struct:DJI::onboardSDK::TimeStampData
@@ -2183,6 +2169,7 @@ yawMode	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  uint8_t yawMode;$/;"	m	st
 yawRate	dji_sdk_lib/include/dji_sdk_lib/DJI_HotPoint.h	/^    float32_t yawRate;$/;"	m	struct:DJI::onboardSDK::HotPoint::YawRate
 yawRate	dji_sdk_lib/include/dji_sdk_lib/DJI_Mission.h	/^  uint8_t yawRate;$/;"	m	struct:DJI::onboardSDK::HotPointACKData
 yawRate	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  float32_t yawRate; \/\/ degree$/;"	m	struct:DJI::onboardSDK::HotPointData
+yaw_angle	dji_sdk_demo/src/rctest1.cpp	/^float yaw_angle=0.0;$/;"	v
 z	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^  double z;$/;"	m	struct:DJI::SpaceVector
 z	dji_sdk_lib/include/dji_sdk_lib/DJICommonType.h	/^  double z;$/;"	m	struct:DJI::Vector3dData
 z	dji_sdk_lib/include/dji_sdk_lib/DJI_Flight.h	/^  float32_t z;$/;"	m	struct:DJI::onboardSDK::FlightData
@@ -2191,6 +2178,7 @@ z	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  float32_t z;$/;"	m	struct:DJI::
 z	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  float32_t z;$/;"	m	struct:DJI::onboardSDK::VelocityData
 z	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t z;$/;"	m	struct:DJI::onboardSDK::MagData
 z	dji_sdk_lib/include/dji_sdk_lib/DJI_Type.h	/^  int16_t z;$/;"	m	struct:DJI::onboardSDK::MagnetData
+z_velocity	dji_sdk_demo/src/rctest1.cpp	/^float z_velocity=0.0;$/;"	v
 zdataCallback	rcphone/listener.cpp	/^void zdataCallback(const rcphone::zdata msg)$/;"	f
 ~HardDriver	dji_sdk_lib/include/dji_sdk_lib/DJI_HardDriver.h	/^  virtual ~HardDriver() {}$/;"	f	class:DJI::onboardSDK::HardDriver
 ~HardDriver_Manifold	dji_sdk/include/dji_sdk/DJI_HardDriver_Manifold.h	/^        ~HardDriver_Manifold() {$/;"	f	class:DJI::onboardSDK::HardDriver_Manifold
