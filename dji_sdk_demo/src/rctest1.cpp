@@ -204,6 +204,11 @@ int main(int argc, char *argv[])
 	//m100_state=1:hold x y z
 	//m100_state=2:rp velocity control by phone
 	//m100_state=3:yaw angle control by phone
+	//0x42: 
+	//VERT_VEL -4m/s~4m/s
+	//HORI_ATTI_TILT_ANG -30deg~30deg
+	//YAW_ANGLE -180deg~180deg
+	//Coordinate_Frame:Body Frame
         switch(operate_code)
         {
 				case 1:
@@ -249,7 +254,7 @@ int main(int argc, char *argv[])
 						for(int i=0;i<5;i++)
 						{
 							ROS_INFO("yaw:%f.",yaw_angle/180*3.14);
-							drone->attitude_control(0x40,0,0,0,yaw_angle);
+							drone->attitude_control(0x42,0,0,0,yaw_angle);
 							usleep(20000);
 						}
 						fix_yaw_angle=yaw_angle;
