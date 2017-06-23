@@ -362,10 +362,10 @@ void AttitudeCallback(rcphone::rpydata msg)
 				pt=-20;
 		if(pt>20)
 				pt=20;
-		if(yt<-45)
-				yt=-45;
-		if(yt>45)
-				yt=45;
+		if(yt<-90)
+				yt=-90;
+		if(yt>90)
+				yt=90;
 		if(abs(rt)<=5)
 				rt=0;
 		if(abs(pt)<=5)
