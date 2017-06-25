@@ -57,12 +57,16 @@ void AttitudeCallback(rcphone::rpydata msg);
 void VerticalCallback(rcphone::zdata msg);
 
 //! Global Viriable
-int operate_code = 0;
+int operate_code = -1;
 int m100_state=0;
 float roll_angle=0.0;
 float pitch_angle=0.0;
 float yaw_angle=0.0;
+float fix_yaw_angle=0.0;
 float z_velocity=0.0;
+float roll_vel=0.0;
+float pitch_vel=0.0;
+
 
 static void Display_Main_Menu(void)
 {
@@ -105,7 +109,7 @@ int main(int argc, char *argv[])
     bool valid_flag = false;
     bool err_flag = false;
     ros::init(argc, argv, "sdk_client");
-    ROS_INFO("sdk_service_client_test");
+    ROS_INFO("Begin!");
     ros::NodeHandle nh;
     DJIDrone* drone = new DJIDrone(nh);
 
@@ -164,14 +168,17 @@ int main(int argc, char *argv[])
     drone->setStopCollisionAvoidanceCallback(StopCollisionAvoidanceCallback, &userData);
 
 	//Set subscriber
-	ros::Subscriber sub=nh.subscribe("rcphone/switchdata",5,StateCallback);
-	ros::Subscriber sub1=nh.subscribe("rcphone/rpydata",50,AttitudeCallback);
-	ros::Subscriber sub2=nh.subscribe("rcphone/zdata",5,VerticalCallback);
+	ros::Subscriber sub=nh.subscribe("switchdata",5,StateCallback);
+	ros::Subscriber sub1=nh.subscribe("rpydata",50,AttitudeCallback);
+	ros::Subscriber sub2=nh.subscribe("zdata",5,VerticalCallback);
 	
     //Display_Main_Menu();
+	drone->request_sdk_permission_control();
+	sleep(1);
     while(1)
     {
         ros::spinOnce();
+	
         //std::cout << "Enter Input Val: ";
         //while(!(std::cin >> temp32)){
         //std::cin.clear();
@@ -191,14 +198,26 @@ int main(int argc, char *argv[])
             continue;
         }
 		*/
-		
+	//ROS_INFO("Hello!");
+
+	//m100_state=0:On the ground
+	//m100_state=1:hold x y z
+	//m100_state=2:rp velocity control by phone
+	//m100_state=3:yaw angle control by phone
+	//0x42: 
+	//VERT_VEL -4m/s~4m/s
+	//HORI_ATTI_TILT_ANG -30deg~30deg
+	//YAW_ANGLE -180deg~180deg
+	//Coordinate_Frame:Body Frame
         switch(operate_code)
         {
 				case 1:
 						//take off
 						drone->takeoff();
+						sleep(3);
 						m100_state=1;
 						operate_code=-1;
+						ROS_INFO("Take OFF Successfully!");
 						break;
 
 				case 2:
@@ -206,37 +225,55 @@ int main(int argc, char *argv[])
 						drone->landing();
 						m100_state=0;
 						operate_code=-1;
+						ROS_INFO("Landing Successfully!");
 						break;
 				case 3:
 						//vertical control
-						for(int i=0;i<20;i++)
+						for(int i=0;i<10;i++)
 						{
-							drone->attitude_control(0x40,0,0,z_velocity,0);//float x float y float z float yaw
+							drone->attitude_control(0x42,0,0,z_velocity,fix_yaw_angle);//float x float y float z float yaw
 							usleep(20000);//50hz
 						}
 						z_velocity=0.0;
-						operate_code=5;
+						operate_code=6;
+						ROS_INFO("Height Control Successfully!");
 						break;
 
 				case 4:
-						//rpy control
-						for(int i=0;i<20;i++)
+						//rp control
+						for(int i=0;i<5;i++)
 						{
-							drone->attitude_control(0x02,roll_angle,pitch_angle,0,yaw_angle);
+							ROS_INFO("roll:%f;pitch:%f;",roll_vel,pitch_vel);
+							drone->attitude_control(0x42,-pitch_vel,roll_vel,0,fix_yaw_angle);
 							usleep(20000);
 						}
 						m100_state=2;
 						break;
 				case 5:
+						//yaw control
+						for(int i=0;i<5;i++)
+						{
+							ROS_INFO("yaw:%f.",yaw_angle/180*3.14);
+							drone->attitude_control(0x42,0,0,0,yaw_angle);
+							usleep(20000);
+						}
+						fix_yaw_angle=yaw_angle;
+						m100_state=3;
+						break;
+				case 6:
+
 						//stable mode
+						ROS_INFO("fix_yaw:%f.",fix_yaw_angle/180*3.14);
 						for(int i=0;i<20;i++)
 						{
-							drone->attitude_control(0x40,0,0,0,0);
+							drone->attitude_control(0x42,0,0,0,fix_yaw_angle);
 							usleep(20000);
 						}
 						m100_state=1;
 						operate_code=-1;
+						ROS_INFO("Stable Mode Successfully!");
 						break;
+
 				default:
 						break;
 		}
@@ -246,47 +283,67 @@ int main(int argc, char *argv[])
     return 0;
 }
 //! Callback functions for Phone Commands
+	//m100_state=0:On the ground
+	//m100_state=1:hold x y z
+	//m100_state=2:rp velocity control by phone
+	//m100_state=3:yaw angle control by phone
 	void StateCallback(rcphone::switchdata msg)
 {
+		ROS_INFO("Switchdata Received.");
 		switch (msg.cmd)
 		{
 				case 0x01:
-						//m100_state=0:On the ground
-						//m100_state=1:free x y z
-						//m100_state=2:rpy control by phone
-						if(m100_state=0)
+						ROS_INFO("Take OFF msg");
+						if(m100_state==0)
 						{
 								operate_code=1;
+								ROS_INFO("Set Operate Code Successfully!");
 						}
 						break;
 				case 0x02:
-						if(m100_state=1)
+						ROS_INFO("Landing msg");
+						if(m100_state==1)
 						{
 								operate_code=2;
+								ROS_INFO("Set Operate Code Successfully!");
 						}
 						break;
 				case 0x03:
-						if(m100_state=1)
+						ROS_INFO("Height Control msg");
+						if(m100_state==1)
 						{
 								operate_code=3;
+								ROS_INFO("Set Operate Code Successfully!");
 						}
 						break;
 				case 0x04:
-						if(m100_state=1)
+						ROS_INFO("RP Velocity Control msg");
+						if(m100_state==1)
 						{
 								operate_code=4;
+								ROS_INFO("Set Operate Code Successfully!");
 						}
 						break;
 				case 0x05:
-						if(m100_state=2)
+						ROS_INFO("Yaw Angle Control msg");
+						if(m100_state==1)
 						{
 								operate_code=5;
+								ROS_INFO("Set Operate Code Successfully!");
+						}
+						break;
+				case 0x06:
+						if(m100_state==2 || m100_state==3)
+						{
+								operate_code=6;
+								ROS_INFO("Set Operate Code Successfully!");
 						}
 						break;
 				default:
 						operate_code=-1;
 						break;
 		}
+		
 }
 void AttitudeCallback(rcphone::rpydata msg)
 {
@@ -297,23 +354,32 @@ void AttitudeCallback(rcphone::rpydata msg)
 		rt=msg.roll;
 		pt=msg.pitch;
 		yt=msg.yaw;
-		if(rt<-25)
-				rt=-25;
-		if(rt>25)
-				rt=25;
-		if(pt<-25)
-				pt=-25;
-		if(pt>25)
-				pt=25;
-		if(yt<-10)
-				yt=-10;
-		if(yt>10)
-				yt=10;
+		if(rt<-20)
+				rt=-20;
+		if(rt>20)
+				rt=20;
+		if(pt<-20)
+				pt=-20;
+		if(pt>20)
+				pt=20;
+		if(yt<-90)
+				yt=-90;
+		if(yt>90)
+				yt=90;
+		if(abs(rt)<=5)
+				rt=0;
+		if(abs(pt)<=5)
+				pt=0;
+		if(abs(yt)<=5)
+				yt=0;
 		roll_angle=rt;
+		roll_vel=roll_angle/10.0;
 		pitch_angle=pt;
+		pitch_vel=pitch_angle/10.0;
 		yaw_angle=yt;
-		
+		//ROS_INFO("roll:%f;pitch:%f;yaw:%f.",rt,pt,yt);
 }
+		
 void VerticalCallback(rcphone::zdata msg)
 {
 		if(msg.z_cmd>0)
@@ -332,6 +398,8 @@ void VerticalCallback(rcphone::zdata msg)
 				}
 
 		}
+		ROS_INFO("zdata Received.");
+		operate_code=3;
 }
 
 //! Callback functions for Mobile Commands

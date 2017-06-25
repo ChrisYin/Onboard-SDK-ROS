@@ -1,5 +1,8 @@
 #!/bin/bash
-source /home/ubuntu/chris/M100_RCphone/devel/setup.bash
-roslaunch rosbridge_server rosbridge_websocket.launch &
-sleep 0.5 
-rosrun rcphone listener
+source /home/ubuntu/M100_RCphone/devel/setup.bash
+sleep 1
+roscore&
+sleep 12
+roslaunch rosbridge_server rosbridge_websocket.launch&
+sleep 5
+roslaunch dji_sdk sdk_manifold.launch
