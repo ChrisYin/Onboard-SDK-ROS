@@ -229,7 +229,7 @@ int main(int argc, char *argv[])
 						break;
 				case 3:
 						//vertical control
-						for(int i=0;i<10;i++)
+						for(int i=0;i<20;i++)
 						{
 							drone->attitude_control(0x42,0,0,z_velocity,fix_yaw_angle);//float x float y float z float yaw
 							usleep(20000);//50hz
